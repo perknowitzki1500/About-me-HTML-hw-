@@ -1,0 +1,83 @@
+<nav>
+    <ul>
+        <li><a href="aboutmehw.html">Home</a></li>
+        <li><a href="Contact.html">Contact Me</a></li>
+        <li><a href="GasStation.html">Gas Station order</a></li>
+        <li><a href="PlazaMaya.html">Plaza Maya</a></li>
+        <li><a href="Todolist.html">To do</a></li>
+    </ul>
+</nav>
+
+
+<main>
+    <section>
+        <h2> Contact me </h2>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <form action="#" method="post"> 
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required> 
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required> 
+            
+            <br><br>
+
+            <label for="name">Phone:</label>
+            <input type="tel" id="Phone" name="Phone" required> 
+            
+            <br><br>
+
+            <label for="priority">Priority Level:</label>
+            <input 
+                type="number" 
+                id="priortiy"
+                name="priority"
+                min="1"
+                max="5">
+            
+            <br><br>
+
+            <p>Preferred Contact Method:</p>
+
+            <input
+            type="radio"
+            id="contact-email"
+            name="contact- method"
+            value="email">
+
+            <label for="contact-email">Email</label>
+
+            <input
+            type="radio"
+            id="contact-phone"
+            name="contact-method"
+            value="phone">
+
+            <label for="contact-phone">Phone</label>
+
+            <br><br>
+
+            <label for="message">Message:</label><br>
+
+            <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="40"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Send Message">
+
+        
+
+        </form>
+    </section>
+</main>
