@@ -1,0 +1,153 @@
+:root {
+    --background-color: #bba9e0;
+    --dark-color: #333333;
+    --accent-color: #d4a017;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+
+
+body {
+    font-family: "Fraunces", serif;
+    background-color: var(--background-color);
+    color:var(--dark-color);
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: var(--dark-color);
+    padding: 30px 15px;
+    text-align:center;
+    margin: 0;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: rgb(116, 220, 173);
+    text-decoration: none;
+    
+}
+
+nav a:hover { 
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px; 
+     
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid var(--dark-color);
+}
+
+table { 
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td { 
+    padding:12px 25px;
+    text-align: left;
+}
+
+caption { 
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.js-section {
+    background-color: #e0f7fa;
+    padding: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+}
+
+todo-lsit {
+    cursor: pointer;
+}
+
+
+todo-main {
+    display: block;
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 25px;
+    background:white;
+    border-radius: 12px;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-title {
+    flex: 1;
+    min-width: 100px;
+    overflow-wrap: anywhere;
+}
+
+#todo-error {
+    color: #a00020;
+    font-weight: bold;
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: wait;
+}
+
+input{
+    padding: 8px;
+    max-width: 100%;
+}
+
+[hidden]{
+    display: none !important;
+}

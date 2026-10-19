@@ -16,24 +16,47 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
     
 
-    <main>
-        <section>
+    <main class="todo-main">
+    <section>
         <h2 id="todo-title">My To-Do List</h2>
-        <p id="todo-message"> Add something to the list!<p>
+        <p id="todo-message">Add something to the list!</p>
 
-            <input type="text" id="todo-input" placeholder="Enter a task">
+        <form id="todo-form">
+            <label for="todo-input">New task:</label>
 
-            <button id="add-button">Add Task</button>
-            <button id="change-button">Change Page</button>
+            <input
+                type="text"
+                id="todo-input"
+                placeholder="Enter a task"
+                maxlength="200"
+                required
+            >
 
-            <ul id="todo-list"></ul>
-        </p>
+            <button id="add-button" type="submit">
+                Add Task
+            </button>
+        </form>
+
+        <p id="todo-status" role="status"></p>
+
+        <p id="todo-error" role="alert" hidden></p>
+
+        <button id="refresh-button" type="button">
+            Refresh Tasks
+        </button>
+
+        <ul id="todo-list"></ul>
     </section>
+</main>
 
-    </main>
+ 
 
     <script src="script.js"></script>
 </body>
 </html> 
+
+
+
+
 
      
